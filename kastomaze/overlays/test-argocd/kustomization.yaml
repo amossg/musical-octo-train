@@ -5,3 +5,5 @@ bases:
   - ../../base
 patchesStrategicMerge:
   - deployment-replicas-patch.yaml
+resources:
+  - secret.yaml
