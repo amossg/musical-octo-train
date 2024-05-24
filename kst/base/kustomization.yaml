@@ -24,7 +24,7 @@ patches:
         annotations:
           avp.kubernetes.io/path: "/kv-v2/data/grafana"
     type: Opaque
-    stringData:
+    data:
       admin-password: "<admin-password>"
       admin-user: "<admin-user>"
       ldap-toml: "<ldap-toml>"
