@@ -8,3 +8,23 @@ helmCharts:
     releaseName: grafana
     valuesFile: values.yaml
     namespace: kustomize
+
+patches:
+  - target:
+      group: apps/v1
+      version: v1
+      kind: Secret
+      name: grafana
+    patch: |-
+      apiVersion: v1
+      kind: Secret
+      metadata:
+        name: grafana
+        namespace: kustomize
+        annotations:
+          avp.kubernetes.io/path: "/kv-v2/data/grafana"
+    type: Opaque
+    stringData:
+      admin-password: "<admin-password>"
+      admin-user: "<admin-user>"
+      ldap-toml: "<ldap-toml>"
