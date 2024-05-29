@@ -4,6 +4,7 @@ metadata:
   name: grafana
   namespace: test
   annotations:
+    argocd.argoproj.io/sync-wave: "1"
     avp.kubernetes.io/path: "kv-v2/data/demo"
 type: Opaque
 stringData:
