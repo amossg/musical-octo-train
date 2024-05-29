@@ -6,7 +6,7 @@ helmCharts:
     repo: https://grafana.github.io/helm-charts
     version: "7.3.11"
     releaseName: grafana
-    valuesFile: values-my.yaml
+#    valuesFile: values-my.yaml
     namespace: kustomize
 
 patches:
