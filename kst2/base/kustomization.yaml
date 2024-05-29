@@ -8,10 +8,3 @@ helmCharts:
     releaseName: grafana
     valuesFile: values.yaml
     namespace: kustomize
-
-patches:
-  - target:
-      kind: Secret
-      name: grafana
-    path: ./patches/secret-patch.yaml:wq:wq
-
