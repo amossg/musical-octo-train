@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/amossg/musical-octo-train.git'
+    targetRevision: main
+    path: test
+#    plugin:
+#      name: cmp-plugin
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: 
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
