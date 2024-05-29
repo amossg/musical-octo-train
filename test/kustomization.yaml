@@ -8,3 +8,8 @@ helmCharts:
     releaseName: grafana
     valuesFile: values-my.yaml
     namespace: kustomize
+
+patches:
+- path: secret.yaml
+  target:
+    kind: sectet
