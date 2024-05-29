@@ -4,5 +4,5 @@ kind: Kustomization
 resourse:
 - ../../grafana/templates/
 
-patches:
+patchesStrategicMerge:
 - secret.yaml
