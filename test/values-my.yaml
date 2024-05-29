@@ -1,1 +1,5 @@
-adminPassword: vault:kv-v2/data/demo#password
+grafana:
+  admin:
+    existingSecret: grafana
+    adminPasswordKey: adminPassword
+
