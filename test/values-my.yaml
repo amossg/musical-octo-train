@@ -1,5 +1,0 @@
-grafana:
-  admin:
-    existingSecret: grafana
-    adminPasswordKey: adminPassword
-
