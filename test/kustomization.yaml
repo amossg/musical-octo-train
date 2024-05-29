@@ -12,4 +12,4 @@ helmCharts:
 patches:
 - path: secret.yaml
   target:
-    kind: Sectet
+    kind: Secret
