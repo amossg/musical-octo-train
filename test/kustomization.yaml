@@ -13,3 +13,6 @@ patches:
 - path: secret.yaml
   target:
     kind: Secret
+- path: configmaps.yaml
+  target:
+    kind: ConfigMap
